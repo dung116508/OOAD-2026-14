@@ -1,92 +1,160 @@
 # OOAD-2026-14
 # PHẦN MỀM QUẢN LÝ CỬA HÀNG BÁN ĐIỆN THOẠI
+1. Yêu cầu hệ thống
+1.1. Quản lý sản phẩm
 
-## 1. Giới thiệu
+Hệ thống cho phép nhân viên quản lý các sản phẩm điện thoại trong cửa hàng:
 
-Phần mềm Quản lý cửa hàng bán điện thoại được xây dựng nhằm hỗ trợ cửa hàng quản lý sản phẩm, khách hàng, nhân viên, hóa đơn và hoạt động bán hàng.
+Thêm điện thoại mới.
+Sửa thông tin điện thoại.
+Xóa điện thoại.
+Xem danh sách điện thoại.
+Tìm kiếm điện thoại.
+Cập nhật số lượng tồn kho.
 
-Phần mềm giúp việc quản lý thông tin trở nên nhanh chóng, chính xác và thuận tiện hơn.
+Thông tin điện thoại gồm:
 
-## 2. Mục tiêu
+Mã điện thoại
+Tên điện thoại
+Hãng sản xuất
+Giá bán
+Số lượng
+Màu sắc
+RAM
+Bộ nhớ
+Thông tin mô tả
+1.2. Quản lý khách hàng
 
-- Quản lý thông tin các sản phẩm điện thoại.
-- Quản lý thông tin khách hàng.
-- Quản lý thông tin nhân viên.
-- Hỗ trợ quá trình bán hàng và lập hóa đơn.
-- Theo dõi số lượng điện thoại tồn kho.
-- Hỗ trợ thống kê doanh thu và sản phẩm bán chạy.
+Hệ thống cho phép nhân viên:
 
-## 3. Đối tượng sử dụng
+Thêm khách hàng.
+Sửa thông tin khách hàng.
+Xóa khách hàng.
+Tìm kiếm khách hàng.
+Xem thông tin khách hàng.
 
-### Quản trị viên
+Thông tin khách hàng gồm:
 
-- Quản lý sản phẩm.
-- Quản lý nhân viên.
-- Quản lý khách hàng.
-- Quản lý hóa đơn.
-- Xem thống kê doanh thu.
+Mã khách hàng
+Họ tên
+Số điện thoại
+Địa chỉ
+Email
+1.3. Quản lý nhân viên
 
-### Nhân viên bán hàng
+Quản lý có thể:
 
-- Xem và tìm kiếm sản phẩm.
-- Quản lý thông tin khách hàng.
-- Lập hóa đơn bán hàng.
-- Xem thông tin hóa đơn.
+Thêm nhân viên.
+Sửa thông tin nhân viên.
+Xóa nhân viên.
+Xem danh sách nhân viên.
+Tìm kiếm nhân viên.
+1.4. Quản lý bán hàng
 
-## 4. Các chức năng chính
+Nhân viên có thể:
 
-### 4.1. Quản lý sản phẩm
+Tạo hóa đơn bán hàng.
+Chọn khách hàng.
+Chọn điện thoại cần bán.
+Nhập số lượng.
+Tính tổng tiền.
+Xác nhận thanh toán.
+In/xuất hóa đơn.
 
-- Thêm sản phẩm.
-- Sửa sản phẩm.
-- Xóa sản phẩm.
-- Xem danh sách sản phẩm.
-- Tìm kiếm sản phẩm.
-- Quản lý giá bán và số lượng tồn kho.
+Khi bán điện thoại, hệ thống tự động giảm số lượng sản phẩm trong kho.
 
-### 4.2. Quản lý khách hàng
+1.5. Quản lý nhập hàng
 
-- Thêm khách hàng.
-- Sửa thông tin khách hàng.
-- Xóa khách hàng.
-- Tìm kiếm khách hàng.
-- Xem lịch sử mua hàng.
+Nhân viên/quản lý có thể:
 
-### 4.3. Quản lý nhân viên
+Tạo phiếu nhập hàng.
+Chọn sản phẩm.
+Nhập số lượng nhập.
+Nhập giá nhập.
+Cập nhật số lượng tồn kho.
+1.6. Quản lý tài khoản
 
-- Thêm nhân viên.
-- Sửa thông tin nhân viên.
-- Xóa nhân viên.
-- Xem danh sách nhân viên.
+Hệ thống cho phép người dùng:
 
-### 4.4. Bán hàng
+Đăng nhập.
+Đăng xuất.
+Thay đổi mật khẩu.
+1.7. Báo cáo và thống kê
 
-- Tìm kiếm sản phẩm.
-- Chọn sản phẩm cần mua.
-- Lập hóa đơn.
-- Tính tổng tiền.
-- Cập nhật số lượng tồn kho.
+Quản lý có thể:
 
-### 4.5. Quản lý hóa đơn
+Xem doanh thu.
+Xem số lượng điện thoại đã bán.
+Xem sản phẩm tồn kho.
+Xem lịch sử bán hàng.
+Thống kê doanh thu theo ngày/tháng.
+2. XÁC ĐỊNH ACTOR
 
-- Xem danh sách hóa đơn.
-- Xem chi tiết hóa đơn.
-- Tìm kiếm hóa đơn.
+Đây là phần rất quan trọng để vẽ Use Case.
 
-### 4.6. Thống kê
+Với cửa hàng điện thoại, mình đề xuất 3 actor chính:
 
-- Thống kê doanh thu.
-- Thống kê sản phẩm bán chạy.
-- Thống kê sản phẩm tồn kho.
+👤 Quản lý
 
-## 5. Phạm vi
+Có quyền:
 
-Phần mềm tập trung vào việc quản lý hoạt động bán điện thoại tại cửa hàng, bao gồm quản lý sản phẩm, khách hàng, nhân viên, hóa đơn và thống kê.
+Quản lý sản phẩm
+Quản lý nhân viên
+Quản lý khách hàng
+Nhập hàng
+Xem báo cáo
+Quản lý bán hàng
+👤 Nhân viên
 
-## 6. Công nghệ dự kiến
+Có quyền:
 
-- HTML
-- CSS
-- JavaScript/TypeScript
-- Git
-- GitHub
+Đăng nhập
+Quản lý khách hàng
+Tìm kiếm sản phẩm
+Bán hàng
+Tạo hóa đơn
+Nhập hàng nếu được phân quyền
+👤 Khách hàng
+
+Có thể:
+
+Xem/tìm kiếm sản phẩm
+Cung cấp thông tin cá nhân
+Mua điện thoại
+
+Đăng nhập
+Đăng xuất
+
+Quản lý sản phẩm
+ ├── Thêm sản phẩm
+ ├── Sửa sản phẩm
+ ├── Xóa sản phẩm
+ ├── Tìm kiếm sản phẩm
+ └── Xem sản phẩm
+
+Quản lý khách hàng
+ ├── Thêm khách hàng
+ ├── Sửa khách hàng
+ ├── Xóa khách hàng
+ └── Tìm kiếm khách hàng
+
+Quản lý nhân viên
+ ├── Thêm nhân viên
+ ├── Sửa nhân viên
+ ├── Xóa nhân viên
+ └── Tìm kiếm nhân viên
+
+Bán hàng
+ ├── Tạo hóa đơn
+ ├── Chọn sản phẩm
+ ├── Tính tổng tiền
+ └── Thanh toán
+
+Nhập hàng
+ ├── Tạo phiếu nhập
+ ├── Chọn sản phẩm
+ └── Cập nhật tồn kho
+
+Báo cáo thống kê
+ ├── Thống kê doanh thu
+ └── Thống kê tồn kho
