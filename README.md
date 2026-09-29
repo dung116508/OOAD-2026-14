@@ -1,4 +1,7 @@
 # OOAD-2026-14
+                                                          Bài tập nhóm 14
+                                           Học phần: Phân tích và thiết kế hướng đối tượng 
+Tên đề tài: 
 # PHẦN MỀM QUẢN LÝ CỬA HÀNG BÁN ĐIỆN THOẠI
 1. Yêu cầu hệ thống
 1.1. Quản lý sản phẩm
