@@ -167,7 +167,6 @@ Hệ thống gồm **2 Actor chính**:
 * Thống kê sản phẩm đã bán
 * Thống kê tồn kho
 * Xem lịch sử bán hàng
-## 5. Sơ đồ Use Case
 
 ## 5. Sơ đồ Use Case
 
