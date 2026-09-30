@@ -1,163 +1,174 @@
 # OOAD-2026-14
-                                                          Bài tập nhóm 14
-                                           Học phần: Phân tích và thiết kế hướng đối tượng 
-Tên đề tài: 
+
+**Bài tập nhóm 14**
+**Học phần:** Phân tích và thiết kế hướng đối tượng
+
 # PHẦN MỀM QUẢN LÝ CỬA HÀNG BÁN ĐIỆN THOẠI
-1. Yêu cầu hệ thống
-1.1. Quản lý sản phẩm
 
-Hệ thống cho phép nhân viên quản lý các sản phẩm điện thoại trong cửa hàng:
+### Thành viên
 
-Thêm điện thoại mới.
-Sửa thông tin điện thoại.
-Xóa điện thoại.
-Xem danh sách điện thoại.
-Tìm kiếm điện thoại.
-Cập nhật số lượng tồn kho.
+* Nguyễn Nhật Dũng
+* Phan Thành Công
 
-Thông tin điện thoại gồm:
+## 1. Phát biểu bài toán
 
-Mã điện thoại
-Tên điện thoại
-Hãng sản xuất
-Giá bán
-Số lượng
-Màu sắc
-RAM
-Bộ nhớ
-Thông tin mô tả
-1.2. Quản lý khách hàng
+Việc quản lý cửa hàng điện thoại bằng phương pháp thủ công gây khó khăn trong việc quản lý sản phẩm, nhân viên, khách hàng, nhập hàng và bán hàng. Khi số lượng sản phẩm và giao dịch tăng, việc tìm kiếm, cập nhật tồn kho, lập hóa đơn và thống kê doanh thu dễ xảy ra sai sót.
 
-Hệ thống cho phép nhân viên:
+Vì vậy, nhóm xây dựng **Phần mềm quản lý cửa hàng bán điện thoại** nhằm tin học hóa các hoạt động quản lý và kinh doanh của cửa hàng.
 
-Thêm khách hàng.
-Sửa thông tin khách hàng.
-Xóa khách hàng.
-Tìm kiếm khách hàng.
-Xem thông tin khách hàng.
+Phần mềm hỗ trợ quản lý sản phẩm, nhân viên, khách hàng, nhập hàng, bán hàng và báo cáo thống kê. Hệ thống tự động cập nhật tồn kho khi nhập hoặc bán sản phẩm, đồng thời hỗ trợ lập hóa đơn và theo dõi doanh thu.
 
-Thông tin khách hàng gồm:
+## 2. Yêu cầu hệ thống
 
-Mã khách hàng
-Họ tên
-Số điện thoại
-Địa chỉ
-Email
-1.3. Quản lý nhân viên
+### 2.1. Quản lý sản phẩm
 
-Quản lý có thể:
+* Thêm, sửa, xóa sản phẩm.
+* Xem và tìm kiếm sản phẩm.
+* Cập nhật số lượng tồn kho.
 
-Thêm nhân viên.
-Sửa thông tin nhân viên.
-Xóa nhân viên.
-Xem danh sách nhân viên.
-Tìm kiếm nhân viên.
-1.4. Quản lý bán hàng
+**Thông tin sản phẩm:**
 
-Nhân viên có thể:
+* Mã điện thoại
+* Tên điện thoại
+* Hãng sản xuất
+* Giá bán
+* Số lượng
+* Màu sắc
+* RAM
+* Bộ nhớ
+* Mô tả
 
-Tạo hóa đơn bán hàng.
-Chọn khách hàng.
-Chọn điện thoại cần bán.
-Nhập số lượng.
-Tính tổng tiền.
-Xác nhận thanh toán.
-In/xuất hóa đơn.
+### 2.2. Quản lý khách hàng
 
-Khi bán điện thoại, hệ thống tự động giảm số lượng sản phẩm trong kho.
+* Thêm, sửa, xóa khách hàng.
+* Tìm kiếm và xem thông tin khách hàng.
 
-1.5. Quản lý nhập hàng
+**Thông tin khách hàng:**
 
-Nhân viên/quản lý có thể:
+* Mã khách hàng
+* Họ tên
+* Số điện thoại
+* Địa chỉ
+* Email
 
-Tạo phiếu nhập hàng.
-Chọn sản phẩm.
-Nhập số lượng nhập.
-Nhập giá nhập.
-Cập nhật số lượng tồn kho.
-1.6. Quản lý tài khoản
+### 2.3. Quản lý nhân viên
 
-Hệ thống cho phép người dùng:
+**Quản lý** có thể:
 
-Đăng nhập.
-Đăng xuất.
-Thay đổi mật khẩu.
-1.7. Báo cáo và thống kê
+* Thêm, sửa, xóa nhân viên.
+* Xem và tìm kiếm nhân viên.
 
-Quản lý có thể:
+### 2.4. Quản lý bán hàng
 
-Xem doanh thu.
-Xem số lượng điện thoại đã bán.
-Xem sản phẩm tồn kho.
-Xem lịch sử bán hàng.
-Thống kê doanh thu theo ngày/tháng.
-2. XÁC ĐỊNH ACTOR
+**Nhân viên/Quản lý** có thể:
 
-Đây là phần rất quan trọng để vẽ Use Case.
+* Tạo hóa đơn.
+* Chọn khách hàng và sản phẩm.
+* Nhập số lượng.
+* Tính tổng tiền.
+* Xác nhận thanh toán.
+* Xuất hóa đơn.
 
-Với cửa hàng điện thoại, mình đề xuất 3 actor chính:
+Khi bán hàng, hệ thống tự động giảm số lượng sản phẩm trong kho.
 
-👤 Quản lý
+### 2.5. Quản lý nhập hàng
 
-Có quyền:
+**Nhân viên/Quản lý** có thể:
 
-Quản lý sản phẩm
-Quản lý nhân viên
-Quản lý khách hàng
-Nhập hàng
-Xem báo cáo
-Quản lý bán hàng
-👤 Nhân viên
+* Tạo phiếu nhập.
+* Chọn sản phẩm.
+* Nhập số lượng và giá nhập.
+* Cập nhật tồn kho.
 
-Có quyền:
+### 2.6. Quản lý tài khoản
 
-Đăng nhập
-Quản lý khách hàng
-Tìm kiếm sản phẩm
-Bán hàng
-Tạo hóa đơn
-Nhập hàng nếu được phân quyền
-👤 Khách hàng
+* Đăng nhập.
+* Đăng xuất.
+* Thay đổi mật khẩu.
 
-Có thể:
+### 2.7. Báo cáo và thống kê
 
-Xem/tìm kiếm sản phẩm
-Cung cấp thông tin cá nhân
-Mua điện thoại
+**Quản lý** có thể:
 
-Đăng nhập
-Đăng xuất
+* Xem doanh thu.
+* Xem số lượng sản phẩm đã bán.
+* Xem sản phẩm tồn kho.
+* Xem lịch sử bán hàng.
+* Thống kê doanh thu theo ngày/tháng.
 
-Quản lý sản phẩm
- ├── Thêm sản phẩm
- ├── Sửa sản phẩm
- ├── Xóa sản phẩm
- ├── Tìm kiếm sản phẩm
- └── Xem sản phẩm
+## 3. Xác định Actor
 
-Quản lý khách hàng
- ├── Thêm khách hàng
- ├── Sửa khách hàng
- ├── Xóa khách hàng
- └── Tìm kiếm khách hàng
+Hệ thống gồm **2 Actor chính**:
 
-Quản lý nhân viên
- ├── Thêm nhân viên
- ├── Sửa nhân viên
- ├── Xóa nhân viên
- └── Tìm kiếm nhân viên
+### 👤 Quản lý
 
-Bán hàng
- ├── Tạo hóa đơn
- ├── Chọn sản phẩm
- ├── Tính tổng tiền
- └── Thanh toán
+* Quản lý sản phẩm.
+* Quản lý nhân viên.
+* Quản lý khách hàng.
+* Quản lý nhập hàng.
+* Quản lý bán hàng.
+* Xem báo cáo và thống kê.
 
-Nhập hàng
- ├── Tạo phiếu nhập
- ├── Chọn sản phẩm
- └── Cập nhật tồn kho
+### 👤 Nhân viên
 
-Báo cáo thống kê
- ├── Thống kê doanh thu
- └── Thống kê tồn kho
+* Đăng nhập/đăng xuất.
+* Quản lý khách hàng.
+* Xem và tìm kiếm sản phẩm.
+* Bán hàng.
+* Tạo hóa đơn.
+* Nhập hàng theo quyền được phân công.
+
+## 4. Các Use Case chính
+
+### Quản lý sản phẩm
+
+* Thêm sản phẩm
+* Sửa sản phẩm
+* Xóa sản phẩm
+* Tìm kiếm sản phẩm
+* Xem sản phẩm
+* Cập nhật tồn kho
+
+### Quản lý khách hàng
+
+* Thêm khách hàng
+* Sửa khách hàng
+* Xóa khách hàng
+* Tìm kiếm khách hàng
+* Xem khách hàng
+
+### Quản lý nhân viên
+
+* Thêm nhân viên
+* Sửa nhân viên
+* Xóa nhân viên
+* Tìm kiếm nhân viên
+* Xem nhân viên
+
+### Bán hàng
+
+* Tạo hóa đơn
+* Chọn sản phẩm
+* Chọn khách hàng
+* Tính tổng tiền
+* Thanh toán
+* Xuất hóa đơn
+
+### Nhập hàng
+
+* Tạo phiếu nhập
+* Chọn sản phẩm
+* Nhập số lượng
+* Cập nhật tồn kho
+
+### Báo cáo và thống kê
+
+* Thống kê doanh thu
+* Thống kê sản phẩm đã bán
+* Thống kê tồn kho
+* Xem lịch sử bán hàng
+## 5. Sơ đồ Use Case
+
+## 5. Sơ đồ Use Case
+
+![Sơ đồ Use Case](sơ%20đồ%20usecase.png)
