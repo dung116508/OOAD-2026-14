@@ -171,4 +171,4 @@ Hệ thống gồm **2 Actor chính**:
 
 ## 5. Sơ đồ Use Case
 
-![Sơ đồ Use Case](sơ%20đồ%20usecase.png)
+![Sơ đồ Use Case](sodousecase.png)
