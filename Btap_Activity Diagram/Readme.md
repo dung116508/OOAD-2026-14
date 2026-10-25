@@ -33,3 +33,11 @@ Sơ đồ hoạt động mô tả luồng xử lý khi người dùng xem/tìm k
 - Phan Thành Công
 7. Kho lưu trữ GitHub
 https://github.com/dung116508/OOAD-2026-14
+
+## Activity Diagram – Quản lý sản phẩm
+
+![Sơ đồ hoạt động quản lý sản phẩm](images/sodohoatdong%20%281%29.png)
+
+## Activity Diagram – Sơ đồ 2
+
+![Sơ đồ hoạt động 2](images/sodohoatdong%20%282%29.png)
